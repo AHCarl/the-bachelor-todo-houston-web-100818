@@ -38,7 +38,7 @@ end
 def get_occupation(data, hometown)
   data.each do |k,v|
     v.each do |k2,v2| 
-      if v2.values.include?(hometown)
+      if k2.values.include?(hometown)
         return k2["occupation"]
       end 
     end 
